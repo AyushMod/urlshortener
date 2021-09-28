@@ -1,5 +1,5 @@
 <?php 
-  include "php/config.php";
+  include "config.php";
   $new_url = "";
   if(isset($_GET)){
     foreach($_GET as $key=>$val){
@@ -85,7 +85,7 @@
                 </li> 
               </li>
                 <li><?php echo $row['clicks'] ?></li>
-                <li><a href="php/delete.php?id=<?php echo $row['shorten_url'] ?>">Delete</a></li>
+                <li><a href="delete.php?id=<?php echo $row['shorten_url'] ?>">Delete</a></li>
               </div>
               <?php
             }
