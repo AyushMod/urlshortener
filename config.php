@@ -7,8 +7,8 @@
     3. Go to JavaScript file and search this keyword - let domain - then paste your url there 
     4. After all changes you've to wait because javascript file save changes may take time to reflect */ 
 
-    $domain = "localhost/url/"; //like this: codingnepalweb.com/
-    $host = "localhost";
+    $domain = "link/url/"; //like this: codingnepalweb.com/
+    $host = "link";
     $user = "root"; //Database username
     $pass = ""; //Database password
     $db = "urlShortener"; //Database name
