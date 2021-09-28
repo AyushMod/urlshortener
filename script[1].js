@@ -15,7 +15,7 @@ form.onsubmit = (e)=>{
 
 shortenBtn.onclick = ()=>{
     let xhr = new XMLHttpRequest();
-    xhr.open("POST", "php/url-controll.php", true);
+    xhr.open("POST", "url-controll.php", true);
     xhr.onload = ()=>{
         if(xhr.readyState == 4 && xhr.status == 200){
             let data = xhr.response;
@@ -24,7 +24,7 @@ shortenBtn.onclick = ()=>{
                 popupBox.classList.add("show");
 
                 //paste your url here. Like this: codingnepalweb.com/
-                let domain = "localhost/url/"; 
+                let domain = "link/url/"; 
                 shortenURL.value = domain + data;
                 copyIcon.onclick = ()=>{
                     shortenURL.select();
@@ -37,7 +37,7 @@ shortenBtn.onclick = ()=>{
                     }
 
                     let xhr2 = new XMLHttpRequest();
-                    xhr2.open("POST", "php/save-url.php", true);
+                    xhr2.open("POST", "save-url.php", true);
                     xhr2.onload = ()=>{
                         if(xhr2.readyState == 4 && xhr2.status == 200){
                             let data = xhr2.response;
